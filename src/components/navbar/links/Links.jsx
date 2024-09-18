@@ -6,20 +6,16 @@ import NavLink from "./navLink/navLink";
 
 const links = [
 	{
-		title: "Homepage",
+		title: "Главная",
 		path: "/",
 	},
 	{
-		title: "About",
-		path: "/about",
+		title: "Мероприятия",
+		path: "/events",
 	},
 	{
-		title: "Contact",
+		title: "Контакты",
 		path: "/contact",
-	},
-	{
-		title: "Blog",
-		path: "/blog",
 	},
 ];
 
@@ -27,8 +23,8 @@ const Links = () => {
 	const [open, setOpen] = useState();
 
 	// TEMPORARY
-	const session = true;
-	const isAdmin = true;
+	const session = false;
+	const isAdmin = false;
 
 	return (
 		<div className={styles.container}>
@@ -43,10 +39,10 @@ const Links = () => {
 								item={{ title: "Admin", path: "/admin" }}
 							/>
 						)}
-						<button className={styles.logout}>Logout</button>
+						<button className={styles.logout}>Выйти</button>
 					</>
 				) : (
-					<NavLink item={{ title: "Login", path: "/login" }} />
+					<NavLink item={{ title: "Войти", path: "/login" }} />
 				)}
 			</div>
 			<button

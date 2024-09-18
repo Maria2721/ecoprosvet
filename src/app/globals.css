@@ -1,11 +1,10 @@
 @import 'normalize.css';
 
 :root {
-    --bg: #0d0c22;
-    --bgSoft: #2d2b42;
-    --text: white;
-    --textSoft: #e5e5e5;
-    --btn: #3673fd;
+    --bg-color: #ffffff;
+    --light-color: #F3F3F3;
+    --accent-color: #B9FF66;
+    --dark-color: #191A23;
 }
 
 * {
@@ -15,8 +14,9 @@
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--text);
+    font-family: var(--font-inter);
+    background-color: var(--bg-color);
+    color: var(--dark-color);
 
 }
 
