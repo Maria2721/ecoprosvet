@@ -1,5 +1,7 @@
+import styles from "./home.module.scss";
+
 const Home = () => {
-	return <div>Homepage</div>;
+	return <div className="container">Homepage</div>;
 };
 
 export default Home;
