@@ -1,0 +1,18 @@
+.container {
+    font-family: var(--font-gropled); // font-family: var(--font-inter);
+    background-color: var(--accent-color);
+}
+
+.imgContainer {
+    position: relative; // !!! обязательно должен быть
+    width: 500px;
+    height: 500px;
+}
+
+.img {
+    object-fit: contain;
+}
+
+.color {
+    border: 2px solid red;
+}
