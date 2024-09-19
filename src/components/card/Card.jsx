@@ -21,7 +21,7 @@ const Card = () => {
 			<p className={styles.dateCard}>20.09.2024</p>
 			<div className={styles.place}>
 				<p className={styles.place1}>Парк Культуры</p>
-				<p class={styles.place2}>М. Парк Культуры</p>
+				<p className={styles.place2}>М. Парк Культуры</p>
 			</div>
 			<div className={styles.details}>
 				<div
