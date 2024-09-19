@@ -4,8 +4,8 @@ const Home = () => {
 	return <div className="container">
 		<h1 className={styles.h1_title}>Крупнейший портал о всех экологичных мероприятиях Москвв</h1>
 		<div className={styles.buttons}>
-			<button>Выбрать мероприятие</button>
-			<button>Стать организатором</button>
+			<button className={styles.greenButton}>Выбрать мероприятие</button>
+			<button className={styles.blackButton}>Стать организатором</button>
 		</div>
 	</div>;
 };

@@ -2,4 +2,14 @@
     font-family: ;
 }
 
-.buttons {display: flex;}
+.buttons {display: flex; justify-content: space-around;}
+
+.greenButton, .blackButton {
+    width: 300px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+.greenButton
+
+
