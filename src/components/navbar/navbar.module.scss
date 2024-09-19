@@ -1,11 +1,18 @@
 .container {
-    height: 100px;
+    margin-top: 32px;
+    margin-bottom: 78px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo {
-    font-size: 30px;
-    font-weight: bold;
+.imgContainer {
+    position: relative;
+    width: 127px;
+    height: 35px;
+}
+
+.img {
+    object-fit: contain;
 }

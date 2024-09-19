@@ -1,8 +1,9 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 import styles from "./links.module.scss";
 import NavLink from "./navLink/navLink";
+import searchIcon from "../../../../public/images/search.svg";
 
 const links = [
 	{
@@ -21,6 +22,12 @@ const links = [
 
 const Links = () => {
 	const [open, setOpen] = useState();
+	const [search, setSearch] = useState("");
+
+	const handleSearch = (e) => {
+		setSearch(e.target.value);
+		// Добавьте здесь логику поиска, например, запрос к API или фильтрацию данных
+	};
 
 	// TEMPORARY
 	const session = false;
@@ -28,10 +35,32 @@ const Links = () => {
 
 	return (
 		<div className={styles.container}>
-			<div className={styles.links}>
-				{links.map((link) => (
-					<NavLink item={link} key={link.title} />
-				))}
+			<div
+				className={[styles.links, open && styles.mobileLinks].join(" ")}
+			>
+				<NavLink item={links[0]} key={links[0].title} />
+				<NavLink item={links[1]} key={links[1].title} />
+				<div className={styles.wrapper}>
+					<label htmlFor="search" className={styles.label}>
+						<div className={styles.imgContainer}>
+							<Image
+								src={searchIcon}
+								alt="Logo"
+								fill
+								className={styles.img}
+							/>
+						</div>
+					</label>
+					<input
+						type="text"
+						id="search"
+						placeholder="Найти мероприятие..."
+						value={search}
+						onChange={handleSearch}
+						className={styles.input}
+					/>
+				</div>
+				<NavLink item={links[2]} key={links[2].title} />
 				{session ? (
 					<>
 						{isAdmin && (
@@ -51,13 +80,6 @@ const Links = () => {
 			>
 				Menu
 			</button>
-			{open && (
-				<div className={styles.mobileLinks}>
-					{links.map((link) => (
-						<NavLink item={link} key={link.title} />
-					))}
-				</div>
-			)}
 		</div>
 	);
 };
