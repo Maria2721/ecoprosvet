@@ -6,6 +6,7 @@
     justify-content: center;
     background-image: url("../../public/images/main_background.svg");
     background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
 
 .h1_title {
@@ -13,6 +14,16 @@
     width: 70%;
     text-align: center;
     font-size: 48px;
+    margin-top: 40px;
+    display: inline;
+    background-color: var(--accent-color);
+}
+
+.h1_title_main {
+    width: 70%;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 40px;
 }
 
 .green {background: var(--accent-color); padding: 0 9px;}
@@ -53,6 +64,7 @@
 .about, .possibilities {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 10px;
     flex-wrap: wrap;
     /*width: 80%;*/
@@ -78,10 +90,22 @@
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    padding-left: 20px;
+    padding-left: 40px;
     margin-top: 50px;
     margin-bottom: 40px;
 }
+
+.imgQuotes {
+    position: relative; // !!! обязательно должен быть
+    width: 20px; // размеры раздаем здесь контейнеру, а не изображению!
+    height: 20px;
+    margin-right: 10px;
+}
+
+.img {
+    object-fit: contain; // !!! обязательно должен быть
+}
+
 
 .ul {
     list-style: none;
@@ -108,4 +132,11 @@
 }
 .li_even:before {
     background-color: var(--accent-color);
+}
+
+.btn_green {
+    background-image: url("../../public/images/btn_green.svg");
+    background-repeat: no-repeat;
+    width: 259px;
+    height: 62px;
 }
