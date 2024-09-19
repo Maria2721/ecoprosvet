@@ -6,8 +6,8 @@ import NavLink from "./navLink/navLink";
 
 const links = [
 	{
-		title: "Главная",
-		path: "/",
+		title: "Новости",
+		path: "/news",
 	},
 	{
 		title: "Мероприятия",
