@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Card from "@/components/card/Card";
 import styles from "./events.module.scss";
-import about from "../../../public/images/map.png";
 
 const EventsPage = () => {
 	return (
@@ -72,19 +70,13 @@ const EventsPage = () => {
 			</div>
 			<p className={styles.mapName}>Подходящие мероприятия на карте </p>
 			<div className={styles.mapContainer}>
-				<Image
-					src={about}
-					alt="About Image"
-					fill
-					className={styles.img}
-				/>
-				{/* <iframe
+				<iframe
 					src="https://yandex.ru/map-widget/v1/?um=constructor%3A33ef4a3e8a7ffcb5007e429f50179caeb07ac67a6e737e49b156da5ebdb296a8&amp;source=constructor"
 					width="600"
 					height="315"
 					frameborder="0"
 					className={styles.mapYandex}
-				></iframe> */}
+				></iframe>
 			</div>
 			<div className={styles.container}>
 				<Card />
