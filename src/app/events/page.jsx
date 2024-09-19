@@ -74,7 +74,7 @@ const EventsPage = () => {
 					src="https://yandex.ru/map-widget/v1/?um=constructor%3A33ef4a3e8a7ffcb5007e429f50179caeb07ac67a6e737e49b156da5ebdb296a8&amp;source=constructor"
 					width="600"
 					height="315"
-					frameborder="0"
+					frameBorder="0"
 					className={styles.mapYandex}
 				></iframe>
 			</div>

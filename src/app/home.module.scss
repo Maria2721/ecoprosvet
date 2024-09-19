@@ -1,8 +1,11 @@
-.container {display: flex; justify-content: center;}
+.container {
+    display: flex;
+    justify-content: center;
+}
 .hello {
-    align-content: center; 
-    display: flex; 
-    flex-wrap: wrap; 
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-image: url("../../public/images/main_background.svg");
     background-repeat: no-repeat;
@@ -15,11 +18,19 @@
     font-size: 48px;
 }
 
-.green {background: var(--accent-color); padding: 0 9px;}
+.green {
+    background: var(--accent-color);
+    padding: 0 9px;
+}
 
-.buttons {display: flex; justify-content: center; gap: 40px;}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
 
-.greenButton, .blackButton {
+.greenButton,
+.blackButton {
     width: 300px;
     height: 50px;
     border-radius: 7px;
@@ -37,11 +48,17 @@
     color: var(--bg-color);
 }
 
-.clouds {display: flex; width: 60%; flex-wrap: wrap; justify-content: center; margin-top: 50px;}
+.clouds {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
 
 .cloud {
     border-radius: 18px;
-    border: 2px solid #6BC600;
+    border: 2px solid #6bc600;
     height: 65px;
     width: 200px;
     align-content: center;
@@ -50,7 +67,8 @@
     font-size: 14px;
 }
 
-.about, .possibilities {
+.about,
+.possibilities {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -67,7 +85,9 @@
     width: 60%;
 }
 
-.description {width: 80%;}
+.description {
+    width: 80%;
+}
 
 .mission {
     background-image: url("../../public/images/mission_1.svg");
@@ -108,4 +128,50 @@
 }
 .li_even:before {
     background-color: var(--accent-color);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .h1_title {
+        border-radius: 7px;
+        width: 336px;
+        height: 55px;
+        margin-bottom: 52px;
+    }
+
+    .wrapper {
+        width: 1000px;
+    }
+
+    .cards_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 42px;
+    }
+
+    .link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #191a23;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .imgContainer {
+        position: relative;
+        width: 23px;
+        margin-left: 10px;
+    }
+
+    .img {
+        object-fit: contain;
+    }
 }
