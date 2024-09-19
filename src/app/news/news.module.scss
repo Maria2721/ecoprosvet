@@ -1,0 +1,89 @@
+.backText {
+  margin-bottom: 1.7rem;
+  font-size: 1.3rem;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.titleNews {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 3.7rem;
+  background-color: var(--accent-color);
+  border-radius: 7px;
+  width: 16.2rem;
+  height: 3.2rem;
+  padding-top: 1.3rem;
+  font-family: var(--font-gropled);
+}
+
+.container {
+  width: 62.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 1.25rem;
+  margin: auto;
+  margin-bottom: 3.5rem;
+}
+
+.buttonMore {
+  font-family: var(--font-gropled);
+  font-size: 1.25rem;
+  color: var(--accent-color);
+  background-color: black;
+  width: 19.5rem;
+  height: 3.4rem;
+  margin: auto;
+  border-radius: 18px;
+  padding-top: 1rem;
+  margin-bottom: 7.3rem;
+}
+
+.moreNews {
+  width: 37.5rem;
+  height: 14rem;
+  border: 1px solid black;
+  border-radius: 18px;
+  margin: auto;
+}
+
+.moreNewsText1 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.moreNewsText2 {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 1.3rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.email {
+  width: 23.1rem;
+  height: 3rem;
+  border-radius: 16px;
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.submBtn {
+  width: 10.5rem;
+  border-radius: 14px;
+  background-color: var(--accent-color);
+  font-size: 0.9rem;
+  border-bottom: 3px solid black;
+  border-left: 5px solid black;
+}
