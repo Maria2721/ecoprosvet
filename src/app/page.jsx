@@ -1,5 +1,9 @@
+import SingleEventPage from "./events/[event]/page";
+
 const Home = () => {
-	return <div>Homepage</div>;
+	return <div>Homepage
+		<SingleEventPage/>
+	</div>;
 };
 
 export default Home;

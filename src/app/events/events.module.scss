@@ -1,3 +1,16 @@
+.title {
+    background-color: var(--bg-color);
+    color: var(--dark-color);
+}
+
+.about {
+    display: flex;
+}
+
+.img_main {
+    width: 50%;
+}
+
 .eventText1 {
   display: flex;
   gap: 1.25rem;
