@@ -1,5 +1,7 @@
+import styles from "./contact.module.scss";
+
 const ContactPage = () => {
-	return <div>ContactPage</div>;
+	return <div className={styles.container}>ContactPage</div>;
 };
 
 export default ContactPage;

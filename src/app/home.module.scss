@@ -1,15 +1,111 @@
-.h1_title {
-    font-family: ;
+.container {display: flex; justify-content: center;}
+.hello {
+    align-content: center; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    background-image: url("../../public/images/main_background.svg");
+    background-repeat: no-repeat;
 }
 
-.buttons {display: flex; justify-content: space-around;}
+.h1_title {
+    font-family: var(--font-gropled);
+    width: 70%;
+    text-align: center;
+    font-size: 48px;
+}
+
+.green {background: var(--accent-color); padding: 0 9px;}
+
+.buttons {display: flex; justify-content: center; gap: 40px;}
 
 .greenButton, .blackButton {
     width: 300px;
     height: 50px;
     border-radius: 7px;
+    border: 0ch;
+    font-size: 20px;
 }
 
-.greenButton
+.greenButton {
+    background: var(--accent-color);
+    color: var(--dark-color);
+}
 
+.blackButton {
+    background: var(--dark-color);
+    color: var(--bg-color);
+}
 
+.clouds {display: flex; width: 60%; flex-wrap: wrap; justify-content: center; margin-top: 50px;}
+
+.cloud {
+    border-radius: 18px;
+    border: 2px solid #6BC600;
+    height: 65px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+    margin: 10px 10px;
+    font-size: 14px;
+}
+
+.about, .possibilities {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    /*width: 80%;*/
+}
+
+.h1_title {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    font-family: var(--font-gropled);
+    padding-left: 10px;
+    padding-left: 10px;
+    width: 60%;
+}
+
+.description {width: 80%;}
+
+.mission {
+    background-image: url("../../public/images/mission_1.svg");
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.ul {
+    list-style: none;
+    margin-bottom: 50px;
+}
+.li_odd,
+.li_even {
+    margin-top: 10px;
+}
+
+.li_odd:before,
+.li_even:before {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.li_odd:before {
+    background-color: #000;
+}
+.li_even:before {
+    background-color: var(--accent-color);
+}
