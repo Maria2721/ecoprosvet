@@ -2,15 +2,14 @@ import Card from "@/components/card/Card";
 import styles from "./events.module.scss";
 import { getEvents } from "@/lib/data";
 
+const events = await getEvents();
+
 const EventsPage = async () => {
 	const events = await getEvents();
+	console.log(events);
 
 	return (
 		<div className={styles.container}>
-			EventsPage
-			{events.map((event) => (
-				<Card event={event} key={event.id} />
-			))}
 			<div className={styles.eventText}>
 				<div className={styles.eventText1}>
 					<p className={styles.eventText1_1}>Формат мероприятия </p>
@@ -77,24 +76,18 @@ const EventsPage = async () => {
 			</div>
 			<p className={styles.mapName}>Подходящие мероприятия на карте </p>
 			<div className={styles.mapContainer}>
-				<iframe
+				{/* <iframe
 					src="https://yandex.ru/map-widget/v1/?um=constructor%3A33ef4a3e8a7ffcb5007e429f50179caeb07ac67a6e737e49b156da5ebdb296a8&amp;source=constructor"
 					width="600"
 					height="315"
 					frameborder="0"
 					className={styles.mapYandex}
-				></iframe>
+				></iframe> */}
 			</div>
 			<div className={styles.container}>
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
+				{events.map((event) => (
+					<Card event={event} key={event.id} />
+				))}
 			</div>
 			<button className={styles.buttonMore}>Больше мероприятий</button>
 		</div>
